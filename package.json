@@ -1,0 +1,43 @@
+{
+  "name": "auto-translate-i18n",
+  "version": "1.0.0",
+  "description": "Automatically translate i18n JSON files using Google's Gemini AI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "auto-translate-i18n": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "i18n",
+    "translation",
+    "gemini",
+    "google-ai",
+    "internationalization",
+    "localization"
+  ],
+  "author": "buiducnhat",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buiducnhat/auto-translate-i18n.git"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
